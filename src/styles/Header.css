@@ -1,0 +1,19 @@
+body {
+    margin: 0;
+}
+
+#Header {
+    background-color: #E5E5E5 ;
+    border: 0px;
+    margin: 0;
+    padding: 0 10vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.Header-list{
+    display: flex;
+    list-style-type: none;
+    gap: 20px;
+}
