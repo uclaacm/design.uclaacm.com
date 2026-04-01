@@ -1,9 +1,15 @@
 import "../../styles/ImagePlaceholder.css"
 
-function ImagePlaceholder() {
+interface ImagePlaceholderProps {
+    src?: string
+    width?: string
+    height?: string
+}
+
+function ImagePlaceholder({ src = "/images/blank.png", width = "100px", height = "100px" }: ImagePlaceholderProps) {
     return (
-        <div id="ImagePlaceholder">
-            <img src="/public/images/Blank.png" alt=""/>
+        <div id="ImagePlaceholder" style={{ width, height }}>
+            <img src={src} alt=""/>
         </div>
     )
 }

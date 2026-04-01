@@ -16,4 +16,5 @@ body {
     display: flex;
     list-style-type: none;
     gap: 20px;
+    font-family: 'Inter', sans-serif;
 }

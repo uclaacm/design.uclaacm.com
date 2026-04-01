@@ -1,13 +1,11 @@
 import { useState } from 'react'
 import "../../styles/Carousel.css"
 
-const images = [
-    "/public/images/Blank.png",
-    "/public/images/Blank.png",
-    "/public/images/Blank.png",
-]
+interface CarouselProps {
+    images: string[]
+}
 
-function ImagePlaceholder() {
+function ImagePlaceholder({ images }: CarouselProps) {
     const [current, setCurrent] = useState(0)
 
     const prev = () => setCurrent(current === 0 ? images.length - 1 : current - 1)
