@@ -12,6 +12,11 @@ body {
     justify-content: space-between;
 }
 
+#Header img {
+    height: 40px;
+    width: auto;
+}
+
 .Header-list{
     display: flex;
     list-style-type: none;
