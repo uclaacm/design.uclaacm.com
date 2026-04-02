@@ -1,0 +1,67 @@
+#ImagePlaceholder {
+    position: relative;
+    width: 100%;
+    height: 300px;
+}
+
+#ImagePlaceholder img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 50%;
+    transition: background 0.2s ease;
+}
+
+
+.left { left: 10px; }
+.right { right: 10px; }
+
+.arrow::before {
+    content: '';
+    display: block;
+    width: 12px;
+    height: 12px;
+    border-top: 2px solid black;
+    border-right: 2px solid black;
+}
+
+.left::before { transform: rotate(-135deg); }
+.right::before { transform: rotate(45deg); }
+
+.arrow:hover {
+     background: radial-gradient(circle, rgba(255,255,255,0.6) 0%, rgba(255,255,255,0) 100%);
+                
+}
+
+
+.dots {
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    background: rgba(255,255,255,0.5);
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.dot.active {
+    background: white;
+}
