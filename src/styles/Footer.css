@@ -9,6 +9,90 @@ html, body, #root {
 }
 
 #Footer {
-    background: #E5E5E5;
     margin-top: auto;
+    width: 100%;
+    line-height: 0;
+    position: relative;
+}
+
+.footer__bg {
+    width: 100%;
+    display: block;
+    position: relative;
+    z-index: 3;
+}
+
+.footer__socials {
+    position: absolute;
+    top: -48px;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    padding: 24px 0;
+    z-index: 3;
+}
+
+.footer__socials a {
+    display: flex;
+    align-items: center;
+}
+
+.footer__socials img {
+    width: 36px;
+    height: 36px;
+    transition: opacity 0.2s;
+}
+
+.footer__socials a:hover img {
+    opacity: 0.75;
+}
+
+.footer__sky {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+}
+
+.footer__cloud1 {
+    position: absolute;
+    top: 10%;
+    left: -200px;
+    width: 180px;
+    z-index: 2;
+    animation: drift-right 35s linear infinite;
+}
+
+.footer__cloud2 {
+    position: absolute;
+    top: 12%;
+    left: -200px;
+    width: 180px;
+    z-index: 1;
+    animation: drift-right 35s linear infinite;
+    animation-delay: -20s;
+}
+
+@keyframes drift-right {
+    from { transform: translateX(0); }
+    to   { transform: translateX(calc(100vw + 200px)); }
+}
+
+@keyframes drift-left {
+    from { transform: translateX(0); }
+    to   { transform: translateX(calc(-100vw - 200px)); }
+}
+
+.footer__mountains {
+    position: absolute;
+    bottom: 55%;
+    left: 50%;
+    width: 55%;
+    z-index: 1;
 }

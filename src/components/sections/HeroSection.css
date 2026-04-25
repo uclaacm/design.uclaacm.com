@@ -119,10 +119,10 @@
 /* ── Floating element sizes ── */
 
 .float-button-on img,
-.float-button-off img  { width: 95px;  }
-.float-pantone-left img { width: 118px; }
-.float-cursor img       { width: 52px;  }
+.float-button-off img  { width: 110px;  }
+.float-pantone-left img { width: 134px; }
+.float-cursor img       { width: 62px;  }
 .float-unchecked img,
-.float-checked img      { width: 58px;  }
-.float-pantone-right img { width: 148px; }
-.float-scroll img       { width: 175px; }
+.float-checked img      { width: 68px;  }
+.float-pantone-right img { width: 168px; }
+.float-scroll img       { width: 198px; }
