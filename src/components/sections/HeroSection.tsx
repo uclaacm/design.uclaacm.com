@@ -107,7 +107,7 @@ function HeroSection() {
 
       {/* Three horizontal bars */}
       <FloatingElement className="float-lines" mousePos={mousePos}>
-        <svg width="160" height="40" viewBox="0 0 72 18" fill="none" aria-hidden="true">
+        <svg width="140" height="35" viewBox="0 0 72 18" fill="none" aria-hidden="true">
           <rect width="72" height="6" rx="3" fill="#FFAC30" />
           <rect y="12" width="50" height="6" rx="3" fill="#FFAC30" />
         </svg>
@@ -131,7 +131,7 @@ function HeroSection() {
 
       {/* Three dots */}
       <FloatingElement className="float-dots" mousePos={mousePos}>
-        <svg width="96" height="24" viewBox="0 0 72 18" fill="none" aria-hidden="true">
+        <svg width="84" height="21" viewBox="0 0 72 18" fill="none" aria-hidden="true">
           <circle cx="9"  cy="9" r="7" fill="#FFAC30" />
           <circle cx="36" cy="9" r="7" fill="#FFAC30" />
           <circle cx="63" cy="9" r="7" fill="#FFAC30" />

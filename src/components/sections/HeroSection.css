@@ -110,8 +110,8 @@
 .float-pantone-left { top: 54%;    left: 16%;  }
 .float-lines        { top: 80%;    left: 6%;   }
 .float-cursor       { top: 20%;    right: 16%; }
-.float-unchecked    { top: 44%;    right: 16%; }
-.float-checked      { top: 53%;    right: 16%; }
+.float-unchecked    { top: 42%;    right: 16%; }
+.float-checked      { top: 55%;    right: 16%; }
 .float-dots         { top: 61%;    right: 6%;  }
 .float-pantone-right { bottom: 2%; right: 6%;  }
 .float-scroll       { bottom: 3%;  left: 22%;  }
@@ -119,10 +119,10 @@
 /* ── Floating element sizes ── */
 
 .float-button-on img,
-.float-button-off img  { width: 110px;  }
-.float-pantone-left img { width: 135px; }
-.float-cursor img       { width: 60px;  }
+.float-button-off img  { width: 95px;  }
+.float-pantone-left img { width: 118px; }
+.float-cursor img       { width: 52px;  }
 .float-unchecked img,
-.float-checked img      { width: 68px;  }
-.float-pantone-right img { width: 170px; }
-.float-scroll img       { width: 200px; }
+.float-checked img      { width: 58px;  }
+.float-pantone-right img { width: 148px; }
+.float-scroll img       { width: 175px; }

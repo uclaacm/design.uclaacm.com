@@ -46,7 +46,7 @@
 
 .whatis__body {
   font-family: 'Open Sans', sans-serif;
-  font-weight: 500;
+  font-weight: 600;
   font-size: clamp(0.95rem, 1.15vw, 1.05rem);
   color: #444444;
   line-height: 1.75;
@@ -55,7 +55,7 @@
 
 /* Sleepy fox — vertically aligned with intro text */
 .whatis__fox {
-  width: clamp(220px, 29vw, 400px);
+  width: clamp(260px, 35vw, 480px);
   height: auto;
   flex-shrink: 0;
   margin-left: 40px;
@@ -94,7 +94,7 @@
 
 .whatis__card-body {
   font-family: 'Open Sans', sans-serif;
-  font-weight: 500;
+  font-weight: 600;
   font-size: clamp(0.88rem, 1.05vw, 0.975rem);
   color: #555555;
   line-height: 1.7;
