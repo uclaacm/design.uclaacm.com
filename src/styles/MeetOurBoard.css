@@ -1,0 +1,24 @@
+.board-container {
+    padding: 20px 80px 60px 80px;
+    background-color: #ffffff;
+}
+
+.board-title {
+    font-family: 'Poppins', sans-serif;
+    font-size: 48px;
+    font-weight: 600;
+}
+
+.board-black-gradient {
+    background: linear-gradient(180deg, #000000 0%, #666666 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.board-orange-gradient {
+    background: linear-gradient(33deg, #F87615 44%, #FECE5C 88%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
