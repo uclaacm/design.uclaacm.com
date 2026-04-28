@@ -1,0 +1,102 @@
+/* ── Whatis Section ── */
+
+.whatis {
+  background: #ffffff;
+  padding: 120px 8% 80px;
+}
+
+/* ── Top row: intro text + fox ── */
+
+.whatis__top {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  margin-bottom: 56px;
+}
+
+.whatis__intro {
+  flex: 1;
+  max-width: 52%;
+}
+
+.whatis__title {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-size: clamp(1.8rem, 2.8vw, 2.6rem);
+  margin: 0 0 16px 0;
+  color: #111111;
+  line-height: 1.2;
+}
+
+/* "What is" — same black-to-gray gradient as hero title */
+.whatis__title--dark {
+  background: linear-gradient(to bottom, #111111 0%, #555555 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* "ACM Design?" — same 45° orange gradient as "everyone." */
+.whatis__title--gradient {
+  background: linear-gradient(45deg, #F87C1B 0%, #FEC55C 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.whatis__body {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  font-size: clamp(0.95rem, 1.15vw, 1.05rem);
+  color: #444444;
+  line-height: 1.75;
+  margin: 0;
+}
+
+/* Sleepy fox — vertically aligned with intro text */
+.whatis__fox {
+  width: clamp(260px, 35vw, 480px);
+  height: auto;
+  flex-shrink: 0;
+  margin-left: 40px;
+  margin-bottom: -30px;
+}
+
+/* ── Cards row ── */
+
+.whatis__cards {
+  display: flex;
+  gap: 36px;
+}
+
+.whatis__card {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.whatis__card-img {
+  width: 100%;
+  height: auto;
+  border-radius: 14px;
+  display: block;
+  margin-bottom: 18px;
+}
+
+.whatis__card-title {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: clamp(0.95rem, 1.3vw, 1.1rem);
+  color: #111111;
+  margin: 0 0 10px 0;
+  line-height: 1.3;
+}
+
+.whatis__card-body {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  font-size: clamp(0.88rem, 1.05vw, 0.975rem);
+  color: #555555;
+  line-height: 1.7;
+  margin: 0;
+}

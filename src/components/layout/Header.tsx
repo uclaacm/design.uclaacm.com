@@ -1,17 +1,38 @@
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import "../../styles/Header.css";
 
+const navLinks = [
+  { label: "Home", path: "/" },
+  { label: "Events", path: "/events" },
+  { label: "About", path: "/about" },
+  { label: "Clients", path: "/clients" },
+  { label: "Resources", path: "/resources" },
+];
+
 function Header() {
+  const location = useLocation();
+
   return (
-    <nav id="Header">
+    <div id="Header">
       <Link to="/">
-        <img src="/public/images/ACM-Design-Logo.png" alt="ACM Design Logo" />
+        <img src="/images/ACM-Design-Logo.png" className="header__logo" alt="ACM Design" />
       </Link>
-      <ul className="Header-list">
-        <li><Link to="/">Home</Link></li>
-        <li><Link to="/about">About</Link></li>
-      </ul>
-    </nav>
+      <nav className="header__nav">
+        <ul className="header__list">
+          {navLinks.map(({ label, path }) => (
+            <li key={label}>
+              <Link
+                to={path}
+                className={`header__link${location.pathname === path ? ' header__link--active' : ''}`}
+              >
+                {label}
+              </Link>
+            </li>
+          ))}
+        </ul>
+      </nav>
+      <a className="header__join">Join Us</a>
+    </div>
   );
 }
 

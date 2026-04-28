@@ -7,9 +7,10 @@ interface CardProps {
 }
 
 function Card({ images, text }: CardProps) {
+    const slides = images.map(image => ({ image }))
     return (
         <div id="Card">
-            <Carousel images={images} />
+            <Carousel slides={slides} />
             <p style={{ fontFamily: "'Inter', sans-serif" }}>{text}</p>
         </div>
     )

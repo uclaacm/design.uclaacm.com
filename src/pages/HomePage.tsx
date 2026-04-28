@@ -1,12 +1,12 @@
-import WhatIs from '../components/sections/WhatIs'
-import AboutHero from '../components/sections/AboutHero'
+import HeroSection from '../components/sections/HeroSection'
+import Whatis from '../components/sections/Whatis'
 import EventsProjectsSection from '../components/sections/EventsProjectsSection'
 
 function HomePage() {
     return (
         <>
-            <WhatIs />
-            <AboutHero />
+            <HeroSection />
+            <Whatis />
             <EventsProjectsSection />
         </>
     )
