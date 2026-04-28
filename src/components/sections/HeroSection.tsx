@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef, type ReactNode } from 'react';
-import './HeroSection.css';
+import '../../styles/HeroSection.css';
 
 interface MousePos { x: number; y: number; }
 

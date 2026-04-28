@@ -1,4 +1,4 @@
-import './Whatis.css';
+import '../../styles/Whatis.css';
 
 function AboutUs() {
   return (
