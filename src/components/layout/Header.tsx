@@ -1,15 +1,18 @@
+import { Link } from "react-router-dom";
 import "../../styles/Header.css";
+
 function Header() {
   return (
-    <div id="Header">
-      <img src="/public/images/ACM-Design-Logo.png" alt="" />
+    <nav id="Header">
+      <Link to="/">
+        <img src="/public/images/ACM-Design-Logo.png" alt="ACM Design Logo" />
+      </Link>
       <ul className="Header-list">
-        <li>home</li>
-        <li>link</li>
-        <li>link</li>
-        <li>link</li>
+        <li><Link to="/">Home</Link></li>
+        <li><Link to="/about">About</Link></li>
       </ul>
-    </div>
+    </nav>
   );
 }
+
 export default Header;
