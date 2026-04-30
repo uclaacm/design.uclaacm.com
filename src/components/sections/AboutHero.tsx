@@ -1,4 +1,5 @@
 import ImagePlaceholder from "../common/ImagePlaceholder"
+//import cursorSvg from "../../assets/images/cursor.svg" <img src={cursorSvg}/>
 import "../../styles/AboutHero.css"
 
 function AboutHero() {
@@ -23,7 +24,10 @@ function AboutHero() {
 
                 {/*Illustration*/}
                 <div className="about-illustration">
-                    <ImagePlaceholder src="/src/assets/images/about/Illustration-Graphic.png" width="548px" height="413px"/>
+                    <ImagePlaceholder src="/src/assets/images/about/Fox-Graphic.png" width="548px" height="413px"/>
+                    <div className="fox-cursor">
+                        <img src="/src/assets/images/cursor.svg"/>
+                    </div>
                 </div>
 
             </div>

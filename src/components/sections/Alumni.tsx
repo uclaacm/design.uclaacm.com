@@ -38,11 +38,38 @@ function Alumni() {
                 )}
                 
                 {activeTab === '2024-25' && (
-                    <div className="alumni-columns"></div>
+                    <div className="alumni-columns">
+                        <div className="alumni-column">
+                            <p className="alumni-role">Co-Presidents</p>
+                            <p className="alumni-name">Tiffany Zheng, Edward Ng</p>
+                            <p className="alumni-role">Design Directors</p>
+                            <p className="alumni-name">Stephanie Ton, Bethany Kim</p>
+                            <p className="alumni-role">Dev Director</p>
+                            <p className="alumni-name">Coco Li</p>
+                        </div>
+                        <div className="alumni-column">
+                            <p className="alumni-role">Officers</p>
+                            <p className="alumni-name">Frederick Zhang, Rose Bonhomme, Sahithi Lingampalli</p>
+                        </div>
+                    </div>
+                        
                 )}
                 
                 {activeTab === '2023-24' && (
-                    <div className="alumni-columns"></div>
+                    <div className="alumni-columns">
+                        <div className="alumni-column">
+                            <p className="alumni-role">Co-Presidents</p>
+                            <p className="alumni-name">Will Hsieh, Michael Shi</p>
+                            <p className="alumni-role">Design Directors</p>
+                            <p className="alumni-name">Victoria Nguyen, Tiffany Zheng</p>
+                            <p className="alumni-role">Dev Directors</p>
+                            <p className="alumni-name">Edward Ng, Frederick Zhang</p>
+                        </div>
+                        <div className="alumni-column">
+                            <p className="alumni-role">Officers</p>
+                            <p className="alumni-name">Jeremy Baum, Stephanie Ton</p>
+                        </div>
+                    </div>
                 )}
             </div>
         </div>

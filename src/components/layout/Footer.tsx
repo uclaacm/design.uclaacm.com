@@ -29,13 +29,13 @@ function Footer() {
             <img src="/images/Mountains.svg" className="footer__mountains" style={{ transform: `translateX(-50%) translateY(${mountainY}px)`, opacity: mountainOpacity }} alt="" />
             <img src="/images/FooterForeground.svg" className="footer__bg" alt="" />
             <div className="footer__socials">
-                <a href="https://discord.com" target="_blank" rel="noopener noreferrer">
+                <a href="https://discord.gg/9AEf22AfnX" target="_blank" rel="noopener noreferrer">
                     <img src="/images/DiscordLogo.svg" alt="Discord" />
                 </a>
-                <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+                <a href="https://www.instagram.com/ucladesign/" target="_blank" rel="noopener noreferrer">
                     <img src="/images/InstagramLogo.svg" alt="Instagram" />
                 </a>
-                <a href="mailto:" >
+                <a href="mailto:uclaacmdesign@gmail.com" >
                     <img src="/images/EmailLogo.svg" alt="Email" />
                 </a>
             </div>
