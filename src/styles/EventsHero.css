@@ -1,7 +1,12 @@
 .events-hero-container {
-    max-width: 1440px;
-    padding: 75px 75px 30px 75px;
+    width: 100%;
     background-color: #ffffff;
+}
+
+.events-hero-inner {
+    max-width: 1290px;
+    margin: 0 auto;
+    padding: 75px 75px 30px 75px;
 }
 
 .events-hero-top {

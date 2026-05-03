@@ -1,7 +1,12 @@
 .events-current-container {
-    max-width: 1440px;
-    padding: 30px 75px;
+    width: 100%;
     background-color: #ffffff;
+}
+
+.events-current-inner {
+    max-width: 1290px;
+    margin: 0 auto;
+    padding: 30px 75px;
 }
 
 .events-current-heading {

@@ -6,8 +6,7 @@
 }
 
 .event-card-image {
-    width: 444px;
-    height: 307px;
+    width: 300px;
     background-color: #d9d9d9;
     border-radius: 16px;
     flex-shrink: 0;
@@ -16,8 +15,7 @@
 
 .event-card-image img {
     width: 100%;
-    height: 100%;
-    object-fit: cover;
+    height: auto;
     border-radius: 16px;
 }
 

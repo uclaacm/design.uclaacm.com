@@ -4,6 +4,7 @@ import "../../styles/EventsHero.css"
 function EventsHero() {
     return (
         <div className="events-hero-container">
+            <div className="events-hero-inner">
             <div className="events-hero-top">
 
                 <div className="events-hero-text">
@@ -21,6 +22,7 @@ function EventsHero() {
                     <ImagePlaceholder width="548px" height="413px" />
                 </div>
 
+            </div>
             </div>
         </div>
     )
