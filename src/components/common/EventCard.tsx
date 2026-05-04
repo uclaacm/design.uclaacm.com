@@ -4,11 +4,12 @@ interface EventCardProps {
     src?: string
     title: string
     description: string
+    onClick?: () => void
 }
 
-function EventCard({ src, title, description }: EventCardProps) {
+function EventCard({ src, title, description, onClick }: EventCardProps) {
     return (
-        <div className="event-card">
+        <button className="event-card" onClick={onClick} type="button">
             <div className="event-card-image">
                 {src && <img src={src} alt="" />}
             </div>
@@ -16,7 +17,7 @@ function EventCard({ src, title, description }: EventCardProps) {
                 <h3 className="event-card-title">{title}</h3>
                 <p className="event-card-description">{description}</p>
             </div>
-        </div>
+        </button>
     )
 }
 

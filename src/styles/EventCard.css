@@ -3,10 +3,22 @@
     align-items: center;
     gap: 36px;
     width: 100%;
+    background: none;
+    border: none;
+    padding: 0;
+    text-align: left;
+    cursor: pointer;
+    transition: opacity 200ms ease;
+}
+
+@media (hover: hover) and (pointer: fine) {
+    .event-card:hover {
+        opacity: 0.8;
+    }
 }
 
 .event-card-image {
-    width: 300px;
+    width: 220px;
     background-color: #d9d9d9;
     border-radius: 16px;
     flex-shrink: 0;
@@ -17,6 +29,7 @@
     width: 100%;
     height: auto;
     border-radius: 16px;
+    box-shadow: none;
 }
 
 .event-card-text {
