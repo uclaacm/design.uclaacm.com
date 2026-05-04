@@ -1,6 +1,7 @@
 .events-past-container {
     width: 100%;
     background-color: #ffffff;
+    padding-bottom: 2rem;
 }
 
 .events-past-inner {

@@ -86,7 +86,7 @@ export const events: Event[] = [
     },
     {
         id: "w2026-ai-design",
-        title: "AI + Design Panel",
+        title: "AI x Design Speaker Event",
         shortDescription:
             "Hear from guest speakers on AI tools for frontend development, human-centered AI, and human-computer interaction.",
         fullDescription:
