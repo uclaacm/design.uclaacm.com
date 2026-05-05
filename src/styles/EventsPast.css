@@ -1,0 +1,68 @@
+.events-past-container {
+    width: 100%;
+    background-color: #ffffff;
+    padding-bottom: 2rem;
+}
+
+.events-past-inner {
+    max-width: 1290px;
+    margin: 0 auto;
+    padding: 30px 75px 75px 75px;
+}
+
+.events-past-heading {
+    font-family: 'Poppins', sans-serif;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 1.2;
+    margin: 0 0 24px 0;
+    background: linear-gradient(180deg, #000000 0%, #666666 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.events-past-filter {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    margin-bottom: 24px;
+}
+
+.events-past-filter-label {
+    font-family: 'Poppins', sans-serif;
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 1.2;
+    color: #000;
+    margin: 0;
+}
+
+.events-past-dropdown {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    padding: 8px 20px;
+    background-color: #d9d9d9;
+    border: none;
+    border-radius: 26.5px;
+    font-family: 'Inter', sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    color: #000;
+    cursor: pointer;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 24 24' fill='none' stroke='%231F1F1F' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'><polyline points='6 9 12 15 18 9'/></svg>");
+    background-repeat: no-repeat;
+    background-position: right 20px center;
+    padding-right: 48px;
+}
+
+.events-past-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    width: 100%;
+}
