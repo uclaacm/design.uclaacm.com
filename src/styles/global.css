@@ -2,6 +2,7 @@
 
 body {
     background-color: rgb(216, 216, 216);
+    padding-top: 64px;
 }
 
 .officer-grid {

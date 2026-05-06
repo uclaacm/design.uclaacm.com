@@ -10,7 +10,10 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    position: relative;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
     z-index: 100;
     box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
 }
@@ -42,6 +45,13 @@ body {
     color: #111111;
     text-decoration: none;
     cursor: pointer;
+    transition: color 0.2s ease, font-size 0.2s ease;
+    display: inline-block;
+}
+
+.header__link:hover {
+    color: #F87C1B;
+    font-size: 1.32rem;
 }
 
 .header__link--active {
