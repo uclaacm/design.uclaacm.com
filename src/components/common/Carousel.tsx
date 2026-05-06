@@ -11,36 +11,47 @@ interface CarouselProps {
     slides: Slide[]
 }
 
+function getSlot(idx: number, current: number, n: number) {
+    const off = ((idx - current) % n + n) % n
+    if (off === 0) return 'center'
+    if (off === 1) return 'right'
+    if (off === n - 1) return 'left'
+    return off < n / 2 ? 'far-right' : 'far-left'
+}
+
 function Carousel({ slides }: CarouselProps) {
     const [current, setCurrent] = useState(0)
-
     const n = slides.length
-    const prevIdx = (current - 1 + n) % n
-    const nextIdx = (current + 1) % n
 
-    const prev = () => setCurrent(prevIdx)
-    const next = () => setCurrent(nextIdx)
+    const navigate = (target: number) => {
+        if (target === current) return
+        setCurrent(target)
+    }
 
     const { title, body } = slides[current]
 
     return (
         <div className="carousel">
             <div className="carousel__track">
+                {slides.map((slide, i) => {
+                    const slot = getSlot(i, current, n)
+                    return (
+                        <div
+                            key={i}
+                            className={`carousel__item carousel__item--${slot}`}
+                            onClick={
+                                slot === 'left'  ? () => navigate(((current - 1) + n) % n) :
+                                slot === 'right' ? () => navigate((current + 1) % n) :
+                                undefined
+                            }
+                        >
+                            <img src={slide.image} alt="" />
+                        </div>
+                    )
+                })}
 
-                <div className="carousel__side carousel__side--prev" onClick={prev}>
-                    <img src={slides[prevIdx].image} alt="" />
-                </div>
-
-                <div className="carousel__main">
-                    <img src={slides[current].image} alt="" />
-                </div>
-
-                <div className="carousel__side carousel__side--next" onClick={next}>
-                    <img src={slides[nextIdx].image} alt="" />
-                </div>
-
-                <button className="carousel__arrow carousel__arrow--left"  onClick={prev} aria-label="Previous" />
-                <button className="carousel__arrow carousel__arrow--right" onClick={next} aria-label="Next" />
+                <button className="carousel__arrow carousel__arrow--left"  onClick={() => navigate(((current - 1) + n) % n)} aria-label="Previous" />
+                <button className="carousel__arrow carousel__arrow--right" onClick={() => navigate((current + 1) % n)} aria-label="Next" />
             </div>
 
             <div className="carousel__diamonds">
@@ -48,7 +59,7 @@ function Carousel({ slides }: CarouselProps) {
                     <span
                         key={i}
                         className={`carousel__diamond${i === current ? ' carousel__diamond--active' : ''}`}
-                        onClick={() => setCurrent(i)}
+                        onClick={() => navigate(i)}
                     />
                 ))}
             </div>

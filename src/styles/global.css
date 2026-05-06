@@ -3,6 +3,7 @@
 body {
     background-color: rgb(216, 216, 216);
     padding-top: 64px;
+    cursor: url('/images/user-cursor.svg') 7 5, auto;
 }
 
 .officer-grid {

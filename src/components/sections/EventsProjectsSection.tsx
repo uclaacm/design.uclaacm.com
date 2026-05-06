@@ -22,7 +22,7 @@ function EventsProjectsSection() {
     }, [])
 
     return (
-        <div style={{ padding: "60px 100px", background: "#ffffff" }}>
+        <div style={{ padding: "60px 100px 120px", background: "#ffffff" }}>
             <p
                 ref={headingRef}
                 className="events__scroll-in"
@@ -42,19 +42,24 @@ function EventsProjectsSection() {
                 <div style={{ width: "100%" }}>
                     <Carousel slides={[
                         {
-                            image: "/images/blank.png",
+                            image: "/images/Ai-x-Design.jpg",
                             title: "AI x Design Event",
                             body: "In this Claude-sponsored event, we hosted guest speakers who spoke about AI tools for frontend development, human-centered AI and XR, and human-computer interaction.",
                         },
                         {
                             image: "/images/Picnic-Social.jpg",
-                            title: "Social",
-                            body: "picnic at jans steps finals week winter",
+                            title: "Janss Picnic",
+                            body: "Destressing during finals week winter quarter with a team picnic at Janss Steps.",
                         },
                         {
                             image: "/images/balloon.jpg",
                             title: "balloon flowers?",
                             body: "whats happening here?",
+                        },
+                        {
+                            image: "/images/Big-little.jpg",
+                            title: "Big-Little Reveal",
+                            body: "Our super fun big-little reveal night during winter quarter, pairing our new interns with their Bigs for the year. Shoutout to Beth for letting us use her apartment to host a game night and our reveal celebration.",
                         },
                     ]} />
                 </div>
