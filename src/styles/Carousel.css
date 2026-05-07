@@ -24,7 +24,7 @@
 .carousel__track {
     position: relative;
     width: 100%;
-    height: 300px;
+    height: 340px;
     overflow: hidden;
 }
 
@@ -64,7 +64,7 @@
 /* Left side */
 .carousel__item--left {
     left: 4%;
-    top: 40px;
+    top: 60px;
     width: 19%;
     height: 220px;
     opacity: 0.5;
@@ -75,7 +75,7 @@
 /* Right side */
 .carousel__item--right {
     left: 77%;
-    top: 40px;
+    top: 60px;
     width: 19%;
     height: 220px;
     opacity: 0.5;
@@ -86,7 +86,7 @@
 /* Off-screen left */
 .carousel__item--far-left {
     left: -22%;
-    top: 40px;
+    top: 60px;
     width: 19%;
     height: 220px;
     opacity: 0;
@@ -97,7 +97,7 @@
 /* Off-screen right */
 .carousel__item--far-right {
     left: 103%;
-    top: 40px;
+    top: 60px;
     width: 19%;
     height: 220px;
     opacity: 0;

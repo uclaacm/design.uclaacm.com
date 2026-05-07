@@ -1,8 +1,8 @@
 import { useEffect, useRef } from 'react';
 import '../../styles/Whatis.css';
 
-const PARALLAX_INTENSITY = 5;
-const PARALLAX_SCALE = 1.07;
+const PARALLAX_INTENSITY = 14;
+const PARALLAX_SCALE = 1.12;
 
 function makeParallaxHandlers(imgRef: React.RefObject<HTMLImageElement>) {
   return {

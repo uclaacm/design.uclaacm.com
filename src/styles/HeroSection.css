@@ -7,6 +7,7 @@
   flex-shrink: 0;
   overflow: hidden;
   background: #ffffff;
+  user-select: none;
 }
 
 /* Fox + background combined */
@@ -102,10 +103,11 @@
 
 .float-el {
   position: absolute;
-  pointer-events: none;
+  pointer-events: auto;
   user-select: none;
   will-change: transform;
   z-index: 5;
+  cursor: pointer;
 }
 
 .float-el img {

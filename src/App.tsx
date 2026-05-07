@@ -5,6 +5,7 @@ import Footer from './components/layout/Footer'
 import HomePage from './pages/HomePage'
 import AboutPage from './pages/AboutPage'
 import EventsPage from './pages/EventsPage'
+import SelectionRect from './components/common/SelectionRect'
 
 function ScrollToTop() {
     const { pathname } = useLocation()
@@ -15,6 +16,7 @@ function ScrollToTop() {
 function App() {
     return (
         <BrowserRouter>
+            <SelectionRect />
             <ScrollToTop />
             <Header />
             <Routes>
