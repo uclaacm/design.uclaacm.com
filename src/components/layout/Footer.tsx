@@ -35,7 +35,7 @@ function Footer() {
                 <a href="https://www.instagram.com/ucladesign/" target="_blank" rel="noopener noreferrer">
                     <img src="/images/InstagramLogo.svg" alt="Instagram" />
                 </a>
-                <a href="mailto:" >
+                <a href="mailto:design@uclaacm.com">
                     <img src="/images/EmailLogo.svg" alt="Email" />
                 </a>
             </div>
