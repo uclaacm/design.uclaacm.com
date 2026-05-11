@@ -1,3 +1,16 @@
+/* ── Scroll-in animation ── */
+
+.whatis__scroll-in {
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity 0.65s ease, transform 0.65s ease;
+}
+
+.whatis__scroll-in--visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 /* ── Whatis Section ── */
 
 .whatis {
@@ -54,12 +67,43 @@
 }
 
 /* Sleepy fox — vertically aligned with intro text */
-.whatis__fox {
-  width: clamp(260px, 35vw, 480px);
-  height: auto;
+.whatis__fox-wrap {
+  position: relative;
   flex-shrink: 0;
   margin-left: 40px;
   margin-bottom: -30px;
+  width: clamp(260px, 35vw, 480px);
+}
+
+.whatis__fox {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Floating z's from the fox's mouth */
+.whatis__z {
+  position: absolute;
+  left: 14%;
+  bottom: 32%;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  color: #F87C1B;
+  pointer-events: none;
+  opacity: 0;
+  animation: fox-z 2.7s ease-in-out infinite;
+}
+
+.whatis__z--1 { font-size: 1.1rem; animation-delay: 0s; }
+.whatis__z--2 { font-size: 1.4rem; animation-delay: 0.9s;  left: 17%; bottom: 38%; }
+.whatis__z--3 { font-size: 1.0rem; animation-delay: 1.8s;  left: 11%; bottom: 26%; }
+
+@keyframes fox-z {
+  0%   { opacity: 0;   transform: translateY(0)      scale(0.7) rotate(-8deg);  }
+  15%  { opacity: 1;   transform: translateY(-12px)  scale(1)   rotate(8deg);   }
+  40%  { opacity: 1;   transform: translateY(-40px)  scale(1.05) rotate(-6deg); }
+  70%  { opacity: 0.6; transform: translateY(-70px)  scale(1.1) rotate(6deg);   }
+  100% { opacity: 0;   transform: translateY(-95px)  scale(1.2) rotate(-4deg);  }
 }
 
 /* ── Cards row ── */
@@ -75,12 +119,22 @@
   flex-direction: column;
 }
 
+.whatis__card-img-wrap {
+  overflow: hidden;
+  border-radius: 14px;
+  margin-bottom: 18px;
+}
+
 .whatis__card-img {
   width: 100%;
   height: auto;
-  border-radius: 14px;
+  border-radius: 0;
   display: block;
-  margin-bottom: 18px;
+  margin-bottom: 0;
+  transform: scale(1.12);
+  transition: transform 0.35s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  will-change: transform;
+  pointer-events: none;
 }
 
 .whatis__card-title {

@@ -1,59 +1,109 @@
+/* ── Section heading scroll-in ── */
+
+.events__scroll-in {
+    opacity: 0;
+    transform: translateY(28px);
+    transition: opacity 0.65s ease, transform 0.65s ease;
+}
+
+.events__scroll-in--visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
 .carousel {
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 20px;
-    overflow: hidden;
 }
 
-/* ── Track: side + main + side ── */
+/* ── Track ── */
 
 .carousel__track {
     position: relative;
     width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 0;
+    height: 340px;
+    overflow: hidden;
 }
 
-.carousel__main {
-    flex: 0 0 56%;
+/* ── Slide items — all absolutely positioned, CSS transitions move them between slots ── */
+
+.carousel__item {
+    position: absolute;
     border-radius: 12px;
     overflow: hidden;
+    transition:
+        left    0.48s cubic-bezier(0.4, 0, 0.2, 1),
+        top     0.48s cubic-bezier(0.4, 0, 0.2, 1),
+        width   0.48s cubic-bezier(0.4, 0, 0.2, 1),
+        height  0.48s cubic-bezier(0.4, 0, 0.2, 1),
+        opacity 0.48s cubic-bezier(0.4, 0, 0.2, 1);
+    will-change: left, top, width, height, opacity;
+}
+
+.carousel__item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* Center (active) */
+.carousel__item--center {
+    left: 22%;
+    top: 0;
+    width: 56%;
+    height: 100%;
+    opacity: 1;
     z-index: 2;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.12);
 }
 
-.carousel__main img {
-    width: 100%;
-    height: 300px;
-    object-fit: cover;
-    display: block;
-}
-
-.carousel__side {
-    flex: 0 0 19%;
-    border-radius: 12px;
-    overflow: hidden;
-    opacity: 0.5;
-    cursor: pointer;
-    z-index: 1;
-    transition: opacity 0.2s;
-}
-
-.carousel__side--prev { margin-right: -50px; }
-.carousel__side--next { margin-left:  -50px; }
-
-.carousel__side img {
-    width: 100%;
+/* Left side */
+.carousel__item--left {
+    left: 4%;
+    top: 60px;
+    width: 19%;
     height: 220px;
-    object-fit: cover;
-    display: block;
+    opacity: 0.5;
+    z-index: 1;
+    cursor: pointer;
 }
 
-.carousel__side:hover { opacity: 0.65; }
+/* Right side */
+.carousel__item--right {
+    left: 77%;
+    top: 60px;
+    width: 19%;
+    height: 220px;
+    opacity: 0.5;
+    z-index: 1;
+    cursor: pointer;
+}
+
+/* Off-screen left */
+.carousel__item--far-left {
+    left: -22%;
+    top: 60px;
+    width: 19%;
+    height: 220px;
+    opacity: 0;
+    z-index: 0;
+    pointer-events: none;
+}
+
+/* Off-screen right */
+.carousel__item--far-right {
+    left: 103%;
+    top: 60px;
+    width: 19%;
+    height: 220px;
+    opacity: 0;
+    z-index: 0;
+    pointer-events: none;
+}
 
 /* ── Arrows ── */
 
@@ -68,16 +118,16 @@
     z-index: 3;
 }
 
-.carousel__arrow--left  { left:  calc(19% + 6px); }
-.carousel__arrow--right { right: calc(19% + 6px); }
+.carousel__arrow--left  { left:  calc(22% - 32px); }
+.carousel__arrow--right { right: calc(22% - 32px); }
 
 .carousel__arrow::before {
     content: '';
     display: block;
     width: 12px;
     height: 12px;
-    border-top: 2px solid #333;
-    border-right: 2px solid #333;
+    border-top: 3.5px solid #333;
+    border-right: 3.5px solid #333;
 }
 
 .carousel__arrow--left::before  { transform: rotate(-135deg); }

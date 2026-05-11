@@ -14,7 +14,7 @@ function Header() {
 
   return (
     <div id="Header">
-      <Link to="/">
+      <Link to="/" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
         <img src="/images/ACM-Design-Logo.png" className="header__logo" alt="ACM Design" />
       </Link>
       <nav className="header__nav">
