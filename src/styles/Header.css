@@ -21,6 +21,19 @@ body {
 .header__logo {
     height: 36px;
     width: auto;
+    display: inline-block;
+    transition: transform 0.2s ease;
+}
+
+.header__logo:hover {
+    animation: header-bounce 0.35s ease forwards;
+}
+
+@keyframes header-bounce {
+    0%   { transform: scale(1); }
+    40%  { transform: scale(1.18); }
+    70%  { transform: scale(1.08); }
+    100% { transform: scale(1.12); }
 }
 
 .header__nav {
@@ -69,8 +82,10 @@ body {
     cursor: pointer;
     text-decoration: none;
     white-space: nowrap;
+    display: inline-block;
 }
 
 .header__join:hover {
     background: #e06c0e;
+    animation: header-bounce 0.35s ease forwards;
 }
