@@ -1,0 +1,64 @@
+.clients-hero-container {
+    width: 100%;
+    background-color: #ffffff;
+}
+
+.clients-hero-inner {
+    max-width: 1290px;
+    margin: 0 auto;
+    padding: 75px 75px 30px 75px;
+}
+
+.clients-hero-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 60px;
+}
+
+.clients-hero-illustration {
+    width: 548px;
+    height: 413px;
+    border-radius: 20px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.clients-hero-illustration img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.clients-hero-text {
+    flex: 1;
+    padding-bottom: 32px;
+}
+
+.clients-hero-title {
+    font-family: 'Poppins', sans-serif;
+    font-size: 64px;
+    font-weight: 600;
+    line-height: 1.1;
+    margin: 0 0 20px 0;
+}
+
+.clients-hero-black-gradient {
+    background: linear-gradient(180deg, #000000 0%, #666666 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.clients-hero-body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    margin: 0;
+    max-width: 520px;
+    color: #1a1a1a;
+}
