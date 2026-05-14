@@ -1,4 +1,3 @@
-import ImagePlaceholder from "../common/ImagePlaceholder"
 import "../../styles/EventsHero.css"
 
 function EventsHero() {
@@ -12,14 +11,15 @@ function EventsHero() {
                         <span className="events-hero-black-gradient">Events</span>
                     </h1>
                     <p className="events-hero-body">
-                        This page shows events that are open to all. To find out about events for
-                        internal members, please check them out here.
+                        From hands-on workshops in Figma, Photoshop, and front-end development to
+                        speaker panels and quarter-long project tracks, our events are open to all
+                        UCLA students—no experience required! Come learn, design, and create with us.
                     </p>
                 </div>
 
                 {/*Illustration*/}
                 <div className="events-hero-illustration">
-                    <ImagePlaceholder width="548px" height="413px" />
+                    <img src="/images/Fox-Events.svg" alt="Fox Events" width="548" height="413" />
                 </div>
 
             </div>
