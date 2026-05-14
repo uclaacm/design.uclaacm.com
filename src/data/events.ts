@@ -21,6 +21,38 @@ export const isCurrent = (e: Event): boolean => e.date >= new Date()
 
 export const events: Event[] = [
     {
+        id: "s2026-w7-illustrator",
+        title: "Brand Design with Illustrator Workshop",
+        shortDescription:
+            "Learn about brand design strategy and how to navigate Adobe Illustrator to create visual identities.",
+        fullDescription:
+            "Learn about brand design while learning how to use Adobe Illustrator! 🎨🖌️\n\nCome learn about the strategy behind the visual identity that represents brands. Also learn how to navigate Adobe Illustrator and how to use its features! 💫\n\n🧡 RSVP: https://luma.com/y2wgczdw",
+        date: new Date("2026-05-13"),
+        time: "7–8PM",
+        location: "Engineering VI, Room 289",
+        quarter: "Spring",
+        year: 2026,
+        academicYear: "2025-2026",
+        type: "workshop",
+        src: "/images/Events/S2026-W7Workshop.png",
+    },
+    {
+        id: "s2026-w6-frontend",
+        title: "Recreate Website & App Frontends Workshop",
+        shortDescription:
+            "Learn HTML, CSS, and JavaScript by recreating popular website frontends with your own stylistic twist.",
+        fullDescription:
+            "Have you ever wanted to recreate your favorite website or app and add your own stylistic twist? 🌟\n\nCome to our workshop and learn how to use HTML, CSS, and JavaScript. We will guide you through how to recreate an existing popular websites Frontend. 💻\n\n🧡 RSVP: https://luma.com/2dx54qpk",
+        date: new Date("2026-05-06"),
+        time: "7–8PM",
+        location: "Engineering VI, Room 289",
+        quarter: "Spring",
+        year: 2026,
+        academicYear: "2025-2026",
+        type: "workshop",
+        src: "/images/Events/S2026-W6Workshop.png",
+    },
+    {
         id: "s2026-w4-p5js",
         title: "Intro to p5.js Workshop",
         shortDescription:

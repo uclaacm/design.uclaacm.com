@@ -9,7 +9,7 @@ In this beginner friendly workshop you will learn how to navigate and use P5.js.
 📍Engineering VI, Room 289
 🧡RSVP: https://luma.com/470x7bag
 ## Image
-![p5.js workshop](./Events/S2026-W4Workshop.png)
+![p5.js workshop](./images/Events/S2026-W4Workshop.png)
 
 # Digital Cardmarking Workshop
 ## Description
@@ -21,7 +21,7 @@ Come to our workshop and learn how to navigate VS Code. We will teach you how to
 📍 Engineering VI, Room 289
 🧡 RSVP: https://luma.com/nt8h0o7t
 ## Image
-![Digital Cardmarking Workshop](./Events/S2026-W3Workshop.png)
+![Digital Cardmarking Workshop](./images/Events/S2026-W3Workshop.png)
 
 # Intro to Photoshop Workshop
 ## Description
@@ -35,7 +35,7 @@ This is a great way for beginners to break into design. In this workshop, you wi
 
 Also join us for a ShareTea boba run social after the workshop at 8pm!!🧋
 ## Image
-![Intro to Photoshop Workshop](./Events/S2026-W2Workshop.png)
+![Intro to Photoshop Workshop](./images/Events/S2026-W2Workshop.png)
 
 # Build a Standout Design Portfolio Workshop
 ## Description
@@ -48,13 +48,13 @@ Learn how to best present yourself and your skills through a professionally deve
 🗓️ Thursday April 2, 6-8PM
 📍 Boelter 8500
 ## Image
-![Build a Standout Design Portfolio Workshop](./Events/S2026-W1Workshop.png)
+![Build a Standout Design Portfolio Workshop](./images/Events/S2026-W1Workshop.png)
 
 # Projects Track
 ## Description
 🎨 Introducing ACM Design's Projects Track! This 10-week, beginner-friendly series is a chance for you to dive deeper into design by working on a full, PM-led product from ideation to prototype 💻 You’ll collaborate in small teams during weekly 2-hour work sessions 👫, gain guided experience in Figma, and walk away with a portfolio-ready project, all in a supportive and low-commitment environment. This is perfect for anyone who’s enjoyed our workshops and wants to take the next step in design. 🤩 Join us on January 7th from 6-8 PM in MS 5200 to learn more! 🧡
 ## Image
-![Projects Track](./Events/W2026-ProjectsTrack.png)
+![Projects Track](./images/Events/W2026-ProjectsTrack.png)
 
 # AI + Design Panel
 ## Description
@@ -71,7 +71,7 @@ Featuring a demo, free Claude Pro access, and snacks by Claude Code!
 🔗 RSVP link in bio, or use
 tinyurl.com/acm-ai-design
 ## Image
-![AI + Design Panel](./Events/W2026-AIxDesign.png)
+![AI + Design Panel](./images/Events/W2026-AIxDesign.png)
 
 # Design Workshop Track
 ## Description
@@ -85,7 +85,7 @@ Learn how to use Figma for creating wireframes and prototypes and Framer for bui
 
 Mark your calendars, we’ll see you there! 🧡
 ## Image
-![Design Workshop Track](./Events/F2025-DesignTrack.jpg)
+![Design Workshop Track](./images/Events/F2025-DesignTrack.jpg)
 
 # Dev Workshop Track
 ## Description
@@ -99,4 +99,4 @@ Perfect for those who want to learn the fundamentals of front-end development, f
 
 We can’t wait to see you there! 🧡
 ## Image
-![Dev Workshop Track](./Events/F2025-DevTrack.jpg)
+![Dev Workshop Track](./images/Events/F2025-DevTrack.jpg)
